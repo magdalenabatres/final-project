@@ -279,6 +279,9 @@ section {
 #features .section__para {
     text-align: center;
     max-width: 576px;
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 24px;
 }
 .container {
     padding: 96px 0;
@@ -292,6 +295,7 @@ section {
 #pricing .section__title
  {
     text-align: center;
+    text-align: left;
 }
 
 .purple {
@@ -339,10 +343,13 @@ section {
     text-transform: uppercase;
 }
 
-.features__grid{
+.features__header{
+    width: 66.66%;
+    padding-right: 32px;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 
@@ -405,3 +412,29 @@ section {
 /*
 MOVIL
  */
+
+ media(max-width:992px){
+    .features__header{
+     width: 100%;
+     padding-right: 0;
+     margin-bottom: 32px;
+     text-align: center;
+     align-items: center;   
+    }
+
+    #features .section__title,
+    #features .section__parra{
+        text-align: center;
+    }
+
+    .feature{
+      width: 50%;
+    }
+ }
+ 
+ media(max-width:768px){
+    .feature{
+      width: 100%;
+    }
+
+ }
