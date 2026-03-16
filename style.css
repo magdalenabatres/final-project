@@ -1988,11 +1988,13 @@ footer {
       margin-right: 0px;
       margin-bottom: 16px;
     }
+    
     .start__buttons {
       width: auto;
       justify-content: center;
       margin-top: 24px;
       flex-direction: column;
+      gap: 16px;
     }
 
     .start__button {
